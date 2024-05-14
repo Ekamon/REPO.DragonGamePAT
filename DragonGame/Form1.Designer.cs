@@ -30,7 +30,7 @@
         {
             this.gpbPlayerOne = new System.Windows.Forms.GroupBox();
             this.btnSaveOne = new System.Windows.Forms.Button();
-            this.gpbDragoneTypeOne = new System.Windows.Forms.GroupBox();
+            this.gpbDragonTypeOne = new System.Windows.Forms.GroupBox();
             this.radEarthDragonOne = new System.Windows.Forms.RadioButton();
             this.radWindDragonOne = new System.Windows.Forms.RadioButton();
             this.radIceDragonOne = new System.Windows.Forms.RadioButton();
@@ -57,7 +57,7 @@
             this.lblFireDragon = new System.Windows.Forms.Label();
             this.btnStartGame = new System.Windows.Forms.Button();
             this.gpbPlayerOne.SuspendLayout();
-            this.gpbDragoneTypeOne.SuspendLayout();
+            this.gpbDragonTypeOne.SuspendLayout();
             this.gpbPlayerTwo.SuspendLayout();
             this.gpbDragonTypeTwo.SuspendLayout();
             this.gpbDragonStats.SuspendLayout();
@@ -67,7 +67,7 @@
             // 
             this.gpbPlayerOne.BackColor = System.Drawing.Color.Transparent;
             this.gpbPlayerOne.Controls.Add(this.btnSaveOne);
-            this.gpbPlayerOne.Controls.Add(this.gpbDragoneTypeOne);
+            this.gpbPlayerOne.Controls.Add(this.gpbDragonTypeOne);
             this.gpbPlayerOne.Controls.Add(this.txtDragonNameOne);
             this.gpbPlayerOne.Controls.Add(this.lblDragonNameOne);
             this.gpbPlayerOne.Controls.Add(this.txtPlayerNameOne);
@@ -93,19 +93,19 @@
             this.btnSaveOne.UseVisualStyleBackColor = true;
             this.btnSaveOne.Click += new System.EventHandler(this.btnSaveOne_Click);
             // 
-            // gpbDragoneTypeOne
+            // gpbDragonTypeOne
             // 
-            this.gpbDragoneTypeOne.Controls.Add(this.radEarthDragonOne);
-            this.gpbDragoneTypeOne.Controls.Add(this.radWindDragonOne);
-            this.gpbDragoneTypeOne.Controls.Add(this.radIceDragonOne);
-            this.gpbDragoneTypeOne.Controls.Add(this.radFireDragonOne);
-            this.gpbDragoneTypeOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbDragoneTypeOne.Location = new System.Drawing.Point(22, 195);
-            this.gpbDragoneTypeOne.Name = "gpbDragoneTypeOne";
-            this.gpbDragoneTypeOne.Size = new System.Drawing.Size(250, 148);
-            this.gpbDragoneTypeOne.TabIndex = 4;
-            this.gpbDragoneTypeOne.TabStop = false;
-            this.gpbDragoneTypeOne.Text = "Dragon Type :";
+            this.gpbDragonTypeOne.Controls.Add(this.radEarthDragonOne);
+            this.gpbDragonTypeOne.Controls.Add(this.radWindDragonOne);
+            this.gpbDragonTypeOne.Controls.Add(this.radIceDragonOne);
+            this.gpbDragonTypeOne.Controls.Add(this.radFireDragonOne);
+            this.gpbDragonTypeOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbDragonTypeOne.Location = new System.Drawing.Point(22, 195);
+            this.gpbDragonTypeOne.Name = "gpbDragonTypeOne";
+            this.gpbDragonTypeOne.Size = new System.Drawing.Size(250, 148);
+            this.gpbDragonTypeOne.TabIndex = 4;
+            this.gpbDragonTypeOne.TabStop = false;
+            this.gpbDragonTypeOne.Text = "Dragon Type :";
             // 
             // radEarthDragonOne
             // 
@@ -213,6 +213,7 @@
             this.btnSaveTwo.TabIndex = 5;
             this.btnSaveTwo.Text = "SAVE!!!!";
             this.btnSaveTwo.UseVisualStyleBackColor = true;
+            this.btnSaveTwo.Click += new System.EventHandler(this.btnSaveTwo_Click);
             // 
             // gpbDragonTypeTwo
             // 
@@ -369,6 +370,7 @@
             this.btnStartGame.TabIndex = 3;
             this.btnStartGame.Text = "Start Game";
             this.btnStartGame.UseVisualStyleBackColor = false;
+            this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             // 
             // Form1
             // 
@@ -386,8 +388,8 @@
             this.Text = "Battle of the dragons";
             this.gpbPlayerOne.ResumeLayout(false);
             this.gpbPlayerOne.PerformLayout();
-            this.gpbDragoneTypeOne.ResumeLayout(false);
-            this.gpbDragoneTypeOne.PerformLayout();
+            this.gpbDragonTypeOne.ResumeLayout(false);
+            this.gpbDragonTypeOne.PerformLayout();
             this.gpbPlayerTwo.ResumeLayout(false);
             this.gpbPlayerTwo.PerformLayout();
             this.gpbDragonTypeTwo.ResumeLayout(false);
@@ -405,7 +407,7 @@
         private System.Windows.Forms.Label lblPlayerNameOne;
         private System.Windows.Forms.TextBox txtDragonNameOne;
         private System.Windows.Forms.Label lblDragonNameOne;
-        private System.Windows.Forms.GroupBox gpbDragoneTypeOne;
+        private System.Windows.Forms.GroupBox gpbDragonTypeOne;
         private System.Windows.Forms.Button btnSaveOne;
         private System.Windows.Forms.RadioButton radEarthDragonOne;
         private System.Windows.Forms.RadioButton radWindDragonOne;

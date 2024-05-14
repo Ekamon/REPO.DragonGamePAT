@@ -1,6 +1,6 @@
 ﻿namespace DragonGameForm2
 {
-    partial class Form1
+    partial class frmTwo
     {
         /// <summary>
         /// Required designer variable.
@@ -68,6 +68,7 @@
             this.btnBlock.TabIndex = 3;
             this.btnBlock.Text = "Block";
             this.btnBlock.UseVisualStyleBackColor = true;
+            this.btnBlock.Click += new System.EventHandler(this.btnBlock_Click);
             // 
             // btnSpecialAttack
             // 
@@ -162,7 +163,7 @@
             this.btnRest.Text = "Rest";
             this.btnRest.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,8 +174,8 @@
             this.Controls.Add(this.gpbBattleLog);
             this.Controls.Add(this.gpbOpponent);
             this.Controls.Add(this.gpbPlayerTurn);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmTwo";
+            this.Text = "Form2";
             this.gpbPlayerTurn.ResumeLayout(false);
             this.gpbPlayerTurn.PerformLayout();
             this.gpbOpponent.ResumeLayout(false);
